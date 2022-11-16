@@ -92,15 +92,7 @@ p {
 .email-link:hover {
   text-decoration: underline;
 }
-.primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
+
 .img-fluid {
   max-width: 100;
   margin: 40px;
@@ -109,15 +101,29 @@ p {
   flex: 0 0 auto;
   width: 50%;
 }
+
 .mb-3 {
   margin: 40px;
   font-size: 48px;
   display: block;
   text-align: left;
 }
-.mt-5 {
+div.mb-5.mt-5 {
   padding-left: 40px;
 }
+
 .row {
   display: flex;
+}
+
+@media (min-width: 600px) {
+  .primary-link {
+    border-radius: 4px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    color: white;
+  }
 }
